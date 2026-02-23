@@ -405,19 +405,18 @@
 </div><!-- /container -->
 
 
-<div class="container my-5 d-flex justify-content-center">
+<div class="container-fluid my-5 px-0">
 
-    <div class="card shadow-lg border-0"
-         style="max-width: 800px; width: 100%; border-radius: 15px;">
+    <div class="card shadow-lg border-0 w-100 rounded-4">
 
-        <div class="card-body text-center p-5">
+        <div class="card-body text-center py-5">
 
             <h2 class="fw-bold text-primary mb-4">
                 Obras Sociales del Santo Hermano Pedro
             </h2>
 
             <p class="text-muted mb-4">
-                Accede a los principales servicios institucionales.
+                Accede a los principales servicios institucionales <br> (Solo personal con correo institucional AAPOS).
             </p>
 
             <div class="d-flex justify-content-center gap-4 flex-wrap">
