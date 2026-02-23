@@ -1,0 +1,262 @@
+:root{
+  --bg: #f1f6fc;            /* fondo dashboard */
+  --ink: #111827;           /* texto principal */
+  --muted: #031438;         /* texto secundario */
+  --border: #e5e7eb;        /* bordes suaves */
+  --card: #ffffff;          /* fondo cards */
+  --shadow: 0 1px 2px rgba(0,0,0,.06), 0 6px 18px rgba(0,0,0,.06);
+
+  /* barra superior */
+  --topbar: #083a6d;
+  --topbar-2: #062442;
+
+  /* colores tipo dashboard */
+  --primary: #0d6efd;
+  --success: #198754;
+  --warning: #ffc107;
+  --danger:  #dc3545;
+  --info:    #0dcaf0;
+
+  --radius: 10px;
+}
+
+/* ===== BASE ===== */
+body{
+  background: var(--bg);
+  color: var(--ink);
+}
+
+.text-muted{ color: var(--muted) !important; }
+a{ text-decoration: none; }
+
+/* ===== NAVBAR TOPBAR OSCURA ===== */
+.navbar{
+  background: linear-gradient(180deg, var(--topbar), var(--topbar-2)) !important;
+  border-bottom: 1px solid rgba(255,255,255,.08) !important;
+}
+
+.navbar-brand,
+.navbar .nav-link{
+  color: rgba(255,255,255,.92) !important;
+}
+.navbar .nav-link{
+  opacity: .9;
+  font-weight: 500;
+}
+.navbar .nav-link:hover{
+  opacity: 1;
+  color: #fff !important;
+}
+
+/* “dot” como indicador (tipo dashboard) */
+.brand-dot{
+  width: 10px; height: 10px;
+  border-radius: 50%;
+  display: inline-block;
+  margin-right: .5rem;
+  background: var(--primary);
+  box-shadow: 0 0 0 4px rgba(13,110,253,.18);
+}
+
+/* ===== CONTENEDOR ===== */
+.container{
+  max-width: 1200px;
+}
+
+/* ===== CARDS ESTILO DASHBOARD ===== */
+.card,
+.p-4.bg-white,
+.rounded-4.border{
+  background: var(--card) !important;
+  border: 1px solid var(--border) !important;
+  border-radius: var(--radius) !important;
+  box-shadow: var(--shadow);
+  color: var(--ink);
+}
+
+.card-hover{
+  transition: transform .12s ease, box-shadow .12s ease;
+}
+.card-hover:hover{
+  transform: translateY(-2px);
+  box-shadow: 0 2px 6px rgba(0,0,0,.07), 0 10px 26px rgba(0,0,0,.08);
+}
+
+/* ===== HERO COMO “PANEL” ===== */
+.hero{
+  border-left: 6px solid var(--primary) !important;
+}
+
+/* Panel checklist dentro del hero: borde info */
+.hero .col-lg-4 .p-4.bg-white{
+  border-left: 6px solid var(--info) !important;
+}
+
+/* ===== TITULOS DE SECCIÓN ===== */
+.section-title{
+  letter-spacing: -.02em;
+}
+.section-title::after{
+  content:"";
+  display:block;
+  width: 56px;
+  height: 4px;
+  margin-top: 8px;
+  border-radius: 99px;
+  background: var(--primary);
+  opacity: .9;
+}
+
+/* ===== CHIPS / BADGES (tipo tags pequeñas) ===== */
+.chip{
+  background: #a1bfdd !important;
+  border: 1px solid var(--border) !important;
+  color: #334155 !important;
+}
+
+/* ===== ICONOS (PILLS) ===== */
+.icon-pill{
+  width: 44px; height: 44px;
+  border-radius: 10px;
+  display: grid;
+  place-items: center;
+  color: #fff;
+  background: var(--primary);
+}
+.icon-pill.success{ background: var(--success); }
+.icon-pill.info{ background: var(--info); color: #083344; }
+.icon-pill.dark{ background: #111827; }
+
+/* ===== BOTONES ===== */
+/* ===== BOTONES ABRIR SITIO ===== */
+.btn-outline-primary{
+  background-color: #0d6efd !important;   /* Azul Bootstrap */
+  border: 1px solid #0d6efd !important;
+  color: #ffffff !important;
+  font-weight: 600;
+  transition: 0.2s ease;
+}
+
+.btn-outline-primary:hover{
+  background-color: #0b5ed7 !important;
+  border-color: #0a58ca !important;
+  transform: translateY(-1px);
+}
+
+/* ===== BOTONES FLICKR (ALBUMES) ===== */
+#comunicaciones .btn-outline-dark{
+  background-color: #212529 !important;  /* Negro suave */
+  border: 1px solid #212529 !important;
+  color: #ffffff !important;
+  font-weight: 500;
+}
+
+#comunicaciones .btn-outline-dark:hover{
+  background-color: #000000 !important;
+  transform: translateY(-1px);
+}
+
+/* ===== FACEBOOK ===== */
+.btn-outline-primary.w-100{
+  background-color: #1877f2 !important;
+  border: 1px solid #1877f2 !important;
+  color: #fff !important;
+}
+
+/* ===== INSTAGRAM ===== */
+.btn-outline-danger{
+  background: linear-gradient(45deg,#f09433,#dc2743,#cc2366,#bc1888) !important;
+  border: none !important;
+  color: #fff !important;
+  font-weight: 500;
+}
+
+.btn-outline-danger:hover{
+  filter: brightness(0.95);
+}
+
+/* ===== TIKTOK ===== */
+.btn-outline-dark.w-100{
+  background-color: #111111 !important;
+  border: 1px solid #111111 !important;
+  color: #ffffff !important;
+}
+
+/* ===== YOUTUBE ===== */
+.btn-outline-danger.w-100{
+  background-color: #ff0000 !important;
+  border: 1px solid #ff0000 !important;
+  color: #ffffff !important;
+}
+
+/* ===== BADGES: colores dashboard ===== */
+.badge{
+  border: 1px solid rgba(0,0,0,.06);
+}
+.badge.text-bg-primary{ background: var(--primary) !important; }
+.badge.text-bg-success{ background: var(--success) !important; }
+.badge.text-bg-warning{ background: var(--warning) !important; color: #111827 !important; }
+.badge.text-bg-danger{ background: var(--danger) !important; }
+.badge.text-bg-info{ background: var(--info) !important; color: #083344 !important; }
+.badge.text-bg-dark{ background: #111827 !important; }
+
+/* ===== ARREGLITO PARA text-dark EN MODO CLARO ===== */
+.text-dark{ color: var(--ink) !important; }
+
+/* ===== KBD ===== */
+.kbd-like{
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+  font-size: .85rem;
+  padding: .08rem .4rem;
+  border-radius: .4rem;
+  background: #f1f5f9;
+  border: 1px solid var(--border);
+}
+
+/* ===== FOOTER ===== */
+footer{
+  color: var(--muted) !important;
+}
+
+
+/* Compensar navbar sticky al hacer scroll por anclas */
+section,
+#comunicaciones,
+#sitios,
+#proyectos {
+  scroll-margin-top: 90px;
+}
+
+/* ===== BOTÓN FLOTANTE VOLVER ARRIBA ===== */
+.btn-soft.btn-sm[href="#top"]{
+  position: fixed;
+  bottom: 25px;
+  right: 25px;
+  z-index: 9999;
+  padding: 12px 16px !important;
+  border-radius: 50px !important;
+  font-weight: 600;
+  box-shadow: 0 8px 20px rgba(0,0,0,.25);
+  transition: 0.25s ease;
+
+  background: #0d6efd !important;
+  color: #fff !important;
+  border: none !important;
+}
+
+.btn-soft.btn-sm[href="#top"]:hover{
+  transform: translateY(-3px);
+  background: #0b5ed7 !important;
+}
+
+html{ scroll-behavior: smooth; }
+
+
+.navbar-brand img {
+    height: 40px;
+}
+
+.icon-pill img {
+    width: 40px;
+    border-radius: 8px;
+}
