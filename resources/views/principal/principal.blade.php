@@ -38,8 +38,7 @@
                 <img src="{{ asset('img/logo_apos.png') }}" alt="Logo" width="40">
             </span>
             <div>
-              <div class="text-muted small">Panel central</div>
-          <h2 class="fw-bold mb-0 section-title">Asociación Amigos Pro Obras Sociales</h2>
+              <h2 class="fw-bold mb-0 section-title">Asociación Amigos Pro Obras Sociales</h2>
             </div>
           </div>
 
@@ -47,13 +46,13 @@
             Guatemaltecos con alta vocación de servicio, filantropía y compromiso social con Guatemala
           </p>
 
-          <div class="d-flex flex-wrap gap-2 mb-4">
+          <!--<div class="d-flex flex-wrap gap-2 mb-4">
             <span class="badge rounded-pill chip text-dark px-3 py-2"><i class="bi bi-graph-up me-1"></i>Servicio</span>
             <span class="badge rounded-pill chip text-dark px-3 py-2"><i class="bi bi-rocket-takeoff me-1"></i>Compromiso</span>
             <span class="badge rounded-pill chip text-dark px-3 py-2"><i class="bi bi-lightbulb me-1"></i>Innovación</span>
             <span class="badge rounded-pill chip text-dark px-3 py-2"><i class="bi bi-award me-1"></i>Liderazgo</span>
             <span class="badge rounded-pill chip text-dark px-3 py-2"><i class="bi bi-people me-1"></i>Sostenibilidad</span>
-          </div>
+          </div>-->
 
           <div class="d-flex flex-wrap gap-2">
             <a href="#sitios" class="btn btn-primary">
@@ -69,25 +68,23 @@
           <div class="p-4 bg-white rounded-4 border">
             <div class="d-flex justify-content-between align-items-start">
               <div>
-                <div class="text-muted small">Sistemas de Control</div>
-                <div class="fw-semibold">AAPOS</div>
+                <div class="text-muted small">Sitios Institucionales</div>
               </div>
-              <span class="badge text-bg-primary">
-                Fecha: {{ \Carbon\Carbon::now()->format('d/m/Y') }}
+
+
             </span>
             </div>
 
             <div class="d-grid gap-3 mt-3">
-              <a class="btn btn-primary d-flex align-items-center justify-content-center"
-                 href="https://amigos.aapos.site/login" target="_blank" rel="noopener noreferrer">
-                <i class="bi bi-person-fill me-2"></i>
-                <span>OFICINA AAPOS</span>
+
+              <a class="btn btn-warning d-flex align-items-center justify-content-center"
+                 href="https://hermanopedrogt.org/" target="_blank" rel="noopener noreferrer">
+                <span>OBRAS SOCIALES</span>
               </a>
 
               <a class="btn btn-primary d-flex align-items-center justify-content-center"
-                 href="https://aapos.site/login" target="_blank" rel="noopener noreferrer">
-                <i class="bi bi-person-circle me-2"></i>
-                <span>DONACIONES</span>
+                 href="https://www.amigosproobras.org/" target="_blank" rel="noopener noreferrer">
+                <span>AMIGOS PRO OBRAS SOCIALES</span>
               </a>
             </div>
 
@@ -100,12 +97,12 @@
 
 
 <!-- SITIOS PRINCIPALES -->
-  <div id="sitios" class="d-flex justify-content-between align-items-end mb-2">
+
+<div id="sitios" class="d-flex justify-content-between align-items-end mb-2 ">
     <div>
       <h3 class="fw-bold mb-0 section-title">Sitios principales</h3>
       <div class="text-muted">Acceso directo a los sitios oficiales</div>
     </div>
-    <span class="badge text-bg-success px-3 py-2"><i class="bi bi-check2-circle me-1"></i>Oficial</span>
   </div>
 
   <div class="row g-3 mb-4">
@@ -114,24 +111,23 @@
         <div class="card-body p-4">
           <div class="d-flex gap-3">
            <span class="">
-                <img src="{{ asset('img/logo_aapos.png') }}" alt="Logo" width="100">
+                <img src="{{ asset('img/ofis.png') }}" alt="Logo" width="100">
             </span>
             <div class="flex-grow-1">
-              <h5 class="fw-bold mb-1">Asociación Amigos Pro Obras Sociales</h5>
+              <h5 class="fw-bold mb-1">Gestiones Oficina</h5>
               <div class="text-muted small">Sitio oficial</div>
 
               <div class="mt-3 d-grid gap-2">
                 <a class="btn btn-outline-primary"
-                   href="https://www.amigosproobras.org/"
+                   href="https://amigos.aapos.site/"
                    target="_blank" rel="noopener">
                   <i class="bi bi-box-arrow-up-right me-1"></i> Abrir sitio
                 </a>
                 <div class="text-muted small">
-                  <span class="kbd-like"></span>
+
                 </div>
               </div>
             </div>
-            <span class="badge text-bg-success align-self-start">Web</span>
           </div>
         </div>
       </div>
@@ -142,15 +138,15 @@
         <div class="card-body p-4">
           <div class="d-flex gap-3">
             <span class="">
-                <img src="{{ asset('img/logo_obras.png') }}" alt="Logo" width="60">
+                <img src="{{ asset('img/donaciones.png') }}" alt="Logo" width="100">
             </span>
             <div class="flex-grow-1">
-              <h5 class="fw-bold mb-1">Obras Sociales del Santo Hermano Pedro</h5>
+              <h5 class="fw-bold mb-1">Donaciones</h5>
               <div class="text-muted small">Sitio oficial</div>
 
               <div class="mt-3 d-grid gap-2">
                 <a class="btn btn-outline-primary"
-                   href="https://hermanopedrogt.org/"
+                   href="https://aapos.site/"
                    target="_blank" rel="noopener">
                   <i class="bi bi-box-arrow-up-right me-1"></i> Abrir sitio
                 </a>
@@ -158,7 +154,6 @@
                 </div>
               </div>
             </div>
-            <span class="badge text-bg-success align-self-start">Web</span>
           </div>
         </div>
       </div>
@@ -173,7 +168,6 @@
           <h3 class="fw-bold mb-0 section-title">Comunicaciones</h3>
           <div class="text-muted">Acceso rápido a contenido y redes sociales</div>
         </div>
-        <span class="badge text-bg-primary px-3 py-2"><i class="bi bi-diagram-3 me-1"></i>Centralizado</span>
       </div>
 
       <div class="row g-3">
@@ -455,7 +449,7 @@
           <h3 class="fw-bold mb-0 section-title">Proyectos</h3>
           <div class="text-muted">Iniciativas en marcha</div>
         </div>
-        <span class="badge text-bg-success px-3 py-2"><i class="bi bi-map me-1"></i>Roadmap</span>
+        <!--<span class="badge text-bg-success px-3 py-2"><i class="bi bi-map me-1"></i>Roadmap</span>-->
       </div>
 
       <div class="divider my-4"></div>
