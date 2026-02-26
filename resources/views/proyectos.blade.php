@@ -13,7 +13,7 @@
         <div class="p-4 rounded-4 bg-white border h-100">
           <div class="d-flex justify-content-between align-items-start">
             <div class="fw-semibold">{{ $p->nombre }}</div>
-            <span class="badge text-bg-primary">Proyecto</span>
+            <span class="badge text-bg-primary">AAPOS</span>
           </div>
 
           <div class="text-muted small mt-2">

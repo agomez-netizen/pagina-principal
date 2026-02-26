@@ -28,7 +28,7 @@ class DashboardController extends Controller
 
     public function proyectos()
     {
-        $proyectos = Proyecto::latest()->get(); // ajusta si necesitas otro orden
+        $proyectos = Proyecto::orderBy('nombre', 'asc')->get();
         return view('proyectos', compact('proyectos'));
     }
 }
