@@ -26,4 +26,9 @@ class Proyecto extends Model
     protected $casts = [
         'activo' => 'boolean',
     ];
+
+        public function avances()
+    {
+        return $this->hasMany(Avance::class, 'id_proyecto', 'id_proyecto');
+    }
 }

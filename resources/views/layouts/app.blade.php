@@ -54,6 +54,15 @@
                href="{{ route('folletos') }}">Folletos</a>
           </li>
 
+
+            <li class="nav-item">
+                <a class="nav-link {{ request()->routeIs('informe.word.index') ? 'active fw-bold' : '' }}"
+                href="{{ route('informe.word.index') }}">
+                    Agenda
+                </a>
+            </li>
+
+
         </ul>
       </div>
     </div>

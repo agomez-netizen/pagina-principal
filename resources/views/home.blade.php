@@ -37,6 +37,9 @@
             <a href="comunicaciones" class="btn btn-success">
               <i class="bi bi-broadcast me-1"></i> Ir a comunicaciones
             </a>
+                <a href="informe-word" class="btn btn-secondary">
+                <i class="bi bi-file-earmark-text me-1"></i> AGENDA
+                </a>
           </div>
         </div>
 
@@ -46,8 +49,6 @@
               <div>
                 <div class="text-muted small">Sitios Institucionales</div>
               </div>
-
-
             </span>
             </div>
 
