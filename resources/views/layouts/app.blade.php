@@ -36,7 +36,7 @@
         <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-2">
           <li class="nav-item">
             <a class="nav-link {{ request()->routeIs('sitios') ? 'active fw-bold' : '' }}"
-               href="{{ route('sitios') }}">Sitios</a>
+               href="{{ route('home') }}">Sitios</a>
           </li>
 
           <li class="nav-item">
@@ -49,18 +49,17 @@
                href="{{ route('proyectos') }}">Proyectos</a>
           </li>
 
-          <li class="nav-item">
+        <li class="nav-item">
             <a class="nav-link {{ request()->routeIs('folletos') ? 'active fw-bold' : '' }}"
-               href="{{ route('folletos') }}">Folletos</a>
-          </li>
+            href="{{ route('folletos') }}">Folletos</a>
+        </li>
 
-
-            <li class="nav-item">
-                <a class="nav-link {{ request()->routeIs('informe.word.index') ? 'active fw-bold' : '' }}"
-                href="{{ route('informe.word.index') }}">
-                    Agenda
-                </a>
-            </li>
+        <li class="nav-item">
+            <a class="nav-link {{ request()->routeIs('agendas.index') ? 'active fw-bold' : '' }}"
+            href="{{ route('agendas.index') }}">
+                Agendas
+            </a>
+        </li>
 
 
         </ul>

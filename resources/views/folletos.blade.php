@@ -10,8 +10,6 @@
         <!-- NAV TABS -->
         <ul class="nav nav-tabs mb-4" id="folletosTabs" role="tablist">
 
-
-
             <li class="nav-item" role="presentation">
                 <button class="nav-link active" id="tab-2026" data-bs-toggle="tab" data-bs-target="#panel-2026"
                     type="button" role="tab" aria-controls="panel-2026" aria-selected="true">
@@ -65,9 +63,31 @@
 
                         </div>
                     </div>
-                </div>
+
+
+
+                    <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                        <div class="card h-100 shadow-sm border-0 rounded-4">
+                            <img src="{{ asset('img/DATACENTER.png') }}" class="card-img-top p-4" alt="Folleto 2026"
+                                style="height: 240px; object-fit: contain;">
+
+                            <div class="card-body d-flex flex-column">
+                                <h6 class="fw-bold">Data Center OSSHP</h6>
+                                <p class="small text-muted flex-grow-1"></p>
+                                <a href="https://drive.google.com/file/d/1K1Dj3sCGeCiZrhWulTz643wFyGZEVTtn/view?usp=sharing"
+                                    class="btn btn-primary rounded-pill btn-sm">Ver folleto</a>
+                            </div>
+
+                        </div>
+                    </div>
+
+                 </div>
+
 
             </div>
+
+
+
 
 
 
@@ -196,4 +216,71 @@
 
         </div>
     </div>
+
+
+
+    <div class="container py-4 py-md-5">
+
+    <h2 class="fw-bold mb-1">Manuales de Proceso</h2>
+    <div class="text-muted mb-4">AAPOS</div>
+
+    <ul class="nav nav-tabs mb-4" id="folletosTabs" role="tablist">
+        <li class="nav-item" role="presentation">
+            <button class="nav-link active"
+                id="tabm-2026"
+                data-bs-toggle="tab"
+                data-bs-target="#panelm-2026"
+                type="button"
+                role="tab"
+                aria-controls="panelm-2026"
+                aria-selected="true">
+                AAPOS
+            </button>
+        </li>
+    </ul>
+
+    <div class="tab-content" id="folletosTabsContent">
+
+        <div class="tab-pane fade show active"
+            id="panelm-2026"
+            role="tabpanel"
+            aria-labelledby="tabm-2026">
+
+            <div class="row g-4">
+
+                <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                    <div class="card h-100 shadow-sm border-0 rounded-4">
+
+                        <img src="{{ asset('img/manualdonaciones.png') }}"
+                            class="card-img-top p-4"
+                            alt="Manual"
+                            style="height: 240px; object-fit: contain;">
+
+                        <div class="card-body d-flex flex-column">
+                            <h6 class="fw-bold">Gestión Donaciones</h6>
+                            <p class="small text-muted flex-grow-1">
+                                Manual de proceso.
+                            </p>
+
+                            <a href="https://drive.google.com/file/d/19R6tcYvxR-sgM4VOjzGL8rMhhTW8IYzh/view?usp=sharing"
+                                target="_blank"
+                                class="btn btn-primary rounded-pill btn-sm">
+                                Ver Manual
+                            </a>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+
+
+
 @endsection

@@ -31,7 +31,7 @@
           </div>-->
 
           <div class="d-flex flex-wrap gap-2">
-            <a href="#sitios" class="btn btn-primary">
+            <a href="home" class="btn btn-primary">
               <i class="bi bi-link-45deg me-1"></i> Ver sitios principales
             </a>
             <a href="comunicaciones" class="btn btn-success">
@@ -297,7 +297,7 @@
                 </a>
 
                 <!-- Botón Jornadas Médicas -->
-                <a href="https://docs.google.com/spreadsheets/d/14x0P0WL8oErPlYsY-VM0VmVTZqGrNSF9/edit?rtpof=true&sd=true"
+                <a href="https://docs.google.com/spreadsheets/d/1tx3xXsIS5Wz6ivn8tdiFRU5rA_6qhnRR/edit?usp=sharing&ouid=108161976230086813560&rtpof=true&sd=true"
                    target="_blank"
                    class="btn btn-outline-primary btn-lg px-5 py-3 rounded-pill shadow">
                     🏥 Jornadas Médicas OSSHP
