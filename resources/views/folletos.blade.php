@@ -47,6 +47,10 @@
             <div class="tab-pane fade show active" id="panel-2026" role="tabpanel" aria-labelledby="tab-2026"
                 tabindex="0">
 
+
+
+
+
                 <div class="row g-4">
                     <div class="col-12 col-sm-6 col-md-4 col-lg-3">
                         <div class="card h-100 shadow-sm border-0 rounded-4">
@@ -64,6 +68,20 @@
                         </div>
                     </div>
 
+                                        <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                        <div class="card h-100 shadow-sm border-0 rounded-4">
+                            <img src="{{ asset('img/brochure1.jpg') }}" class="card-img-top p-4" alt="Folleto 2026"
+                                style="height: 240px; object-fit: contain;">
+
+                            <div class="card-body d-flex flex-column">
+                                <h6 class="fw-bold">Brochure V2</h6>
+                                <p class="small text-muted flex-grow-1"></p>
+                                <a href="https://drive.google.com/file/d/1ceS-MNDzqTwxljicG4g3OWap_ABMidBe/view?usp=sharing"
+                                    class="btn btn-primary rounded-pill btn-sm">Ver folleto</a>
+                            </div>
+
+                        </div>
+                    </div>
 
 
                     <div class="col-12 col-sm-6 col-md-4 col-lg-3">
@@ -80,6 +98,8 @@
 
                         </div>
                     </div>
+
+
 
                  </div>
 
